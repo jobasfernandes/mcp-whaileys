@@ -1,0 +1,55 @@
+{
+  "name": "mcp-whaileys",
+  "version": "1.0.0",
+  "description": "MCP Server para contexto da biblioteca Whaileys (WhatsApp) - Interfaces, Types, Enums, Functions, Classes. Auto-download do repositório na primeira execução.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-whaileys": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "publish:dry": "npm publish --dry-run"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "whaileys",
+    "whatsapp",
+    "baileys",
+    "typescript",
+    "ai",
+    "copilot"
+  ],
+  "author": "Joseph",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobasfernandes/mcp-whaileys.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "ts-morph": "^27.0.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

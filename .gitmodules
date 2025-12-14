@@ -1,0 +1,3 @@
+[submodule "whaileys"]
+	path = whaileys
+	url = https://github.com/canove/whaileys.git
