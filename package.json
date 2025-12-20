@@ -1,6 +1,6 @@
 {
   "name": "mcp-whaileys",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MCP Server para contexto da biblioteca Whaileys (WhatsApp) - Interfaces, Types, Enums, Functions, Classes. Auto-download do repositório na primeira execução.",
   "type": "module",
   "main": "dist/index.js",
